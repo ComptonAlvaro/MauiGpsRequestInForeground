@@ -3,10 +3,10 @@ using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
-using GTS.CMMS.RegistroHorario.UI.Maui.Platforms.Android.BroadcastReecivers;
+using MauiGpsRequestInForeground.Platforms.Android.BroadcastReecivers;
 using Plugin.LocalNotification;
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui;
+namespace MauiGpsRequestInForeground.Maui;
 
 
 
