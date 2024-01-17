@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly">
+  <application android:allowBackup="false" android:icon="@mipmap/appicon" android:roundIcon="@mipmap/appicon_round" android:supportsRtl="true"
+               android:networkSecurityConfig="@xml/network_security_config">
+
+    <receiver android:name="gts.cmms.registrohorario.ui.maui.ActionBootCompletedBroadcastReceiver"
+              android:enabled="true"
+              android:exported="true"
+              android:directBootAware="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+      </intent-filter>
+    </receiver>
+
+      <!--Necesario indicar el tipo de foreground para poder utilizar la localización en el
+      foreground.
+      No es obligatorio indicarlo aquí si cuando se crea el ForegroundService se indica
+      por parámetro en el método StartForeground.
+      NOTA: el método con el tercer parámetro no funciona, por lo que mejor indicarlo aquí.-->
+
+      <service
+          android:name=".AlarmasForegroundService"
+          android:foregroundServiceType="location"
+          android:exported="false">
+      </service>
+  </application>
+
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+  <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>
+
+<!--NOTAS
+  PERMISOS:
+  
+    FOREGROUND_SERVICE_LOCATION: permite que una aplicación indique el tipo location cuando se
+        inicia un ForegroundService con el método StartForeground().
+        Requiere que se tenga permisos al menos a ACCESS_COARSE_LOCATION o a ACCESS_FINE_LOCATION.
+        Se tiene que tener en cuenta el orden de solicitud de llamadas. Se tiene que solicitar
+        permisos al usuario de ACCESS_COARSE_LOCATION o ACCESS_FINE_LOCATION antes de llamar al
+        método StartForeground() indicando el parámetro location.
+        
+    ACCESS_BACKGROUND_LOCATION: permite que una apliación puede utilizar la localización cuando no
+        está en primer plano. Esto es diferente que permitir la localización al servicio. Aquí
+        es a la aplicación, no al servicio.
+-->
