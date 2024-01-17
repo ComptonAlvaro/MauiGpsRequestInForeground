@@ -6,7 +6,7 @@
 
 
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Localizacion;
+namespace MauiGpsRequestInForeground.Localizacion;
 
 
 
