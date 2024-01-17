@@ -5,7 +5,7 @@ using Android.OS;
 using AndroidX.Core.App;
 using static Android.InputMethodServices.Keyboard;
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Platforms.Android.BroadcastReecivers;
+namespace MauiGpsRequestInForeground.Platforms.Android.BroadcastReecivers;
 
 
 //Esta clase tiene la lógica que se tiene que ejecutar cuando se lance la alarma. Por ello
