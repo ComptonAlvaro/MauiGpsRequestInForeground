@@ -13,14 +13,10 @@
 
 
 using System.Collections.Generic;
-using GTS.CMMS.RegistroHorario.Comun.DTO;
-using GTS.CMMS.RegistroHorario.UI.Aplicacion.Interfaces;
-using GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
-using GTS.ExtensionMethods.ICollection;
 using Java.Nio.Channels;
 using Plugin.LocalNotification;
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Servicios;
+namespace MauiGpsreqeustInForeground;
 
 
 
