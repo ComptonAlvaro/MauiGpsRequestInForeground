@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui
+namespace MauiGpsRequestInForeground.Maui
 {
     [Application]
     public class MainApplication : MauiApplication
