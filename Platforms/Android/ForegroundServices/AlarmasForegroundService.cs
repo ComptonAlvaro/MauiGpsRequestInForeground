@@ -4,17 +4,13 @@ using Android.OS;
 using CommunityToolkit.Mvvm.Messaging;
 using GeolocatorPlugin.Abstractions;
 using GeolocatorPlugin;
-using GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
-using GTS.CMMS.RegistroHorario.UI.Maui.Localizacion;
-using GTS.CMMS.RegistroHorario.UI.Maui.Platforms.Android.Services;
 using Plugin.LocalNotification;
-using GTS.CMMS.RegistroHorario.UI.Maui.Configuracion;
 
 
 
 //Tiene que pertenecer al namespace raíz para poder tener acceso a Android.Content y otros
 //recursos.
-namespace GTS.CMMS.RegistroHorario.UI.Maui;
+namespace MauiGpsRequestInForeground.Maui;
 
 
 
