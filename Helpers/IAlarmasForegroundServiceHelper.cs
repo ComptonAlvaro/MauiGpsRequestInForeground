@@ -1,4 +1,4 @@
-﻿namespace GTS.CMMS.RegistroHorario.UI.Maui.Helpers;
+﻿namespace MauiGpsRequestInForeground.Helpers;
 
 //Se tiene un interfaz porque cuando se invoca para iniciar el foreground en Android se hace
 //con un intent, lo que crea una nueva instancia del foreground, independientemente de que
