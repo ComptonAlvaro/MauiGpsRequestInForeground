@@ -1,7 +1,4 @@
-﻿using GTS.CMMS.RegistroHorario.Comun.DTO;
-using GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
-
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Helpers;
+﻿namespace MauiGpsRequestInForeground.Helpers;
 
 
 
