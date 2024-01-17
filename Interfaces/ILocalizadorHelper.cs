@@ -11,7 +11,7 @@ using GTS.CMMS.RegistroHorario.Comun.DTO;
 
 
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
+namespace MauiGpsRequestInForeground.Interfaces;
 
 
 
