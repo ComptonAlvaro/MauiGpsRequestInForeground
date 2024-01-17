@@ -7,9 +7,6 @@
  */
 
 
-using GTS.CMMS.RegistroHorario.Comun.DTO;
-
-
 
 namespace MauiGpsRequestInForeground.Interfaces;
 
