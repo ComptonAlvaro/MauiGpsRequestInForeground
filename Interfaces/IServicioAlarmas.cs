@@ -5,10 +5,7 @@
  */
 
 
-
-using GTS.CMMS.RegistroHorario.UI.Maui.Configuracion;
-
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
+namespace MauiGpsRequestInForeground.Interfaces;
 
 
 
