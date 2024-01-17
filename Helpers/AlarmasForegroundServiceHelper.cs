@@ -8,7 +8,7 @@ using Android.Content;
 
 
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Helpers;
+namespace MauiGpsRequestInForeground.Helpers;
 
 
 
