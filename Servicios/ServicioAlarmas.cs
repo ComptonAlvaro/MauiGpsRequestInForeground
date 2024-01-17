@@ -1,6 +1,4 @@
 ﻿/*
- * Clase que determina cuándo recordar que se tiene que registrar un nuevo registro horario.
- * 
  * Para ello, periódicamente va solicitando la posición GPS y si la distancia es menor o igual
  * a alguna de las localizaciones de las cuales se quiere recordar que se tiene que registrar,
  * entonces avisará.
@@ -9,14 +7,13 @@
 
 
 
-using GTS.CMMS.RegistroHorario.Comun.DTO;
-using GTS.CMMS.RegistroHorario.UI.Maui.Configuracion;
-using GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
+
 using Java.Sql;
 using Plugin.LocalNotification;
 using Plugin.LocalNotification.EventArgs;
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Servicios;
+
+namespace MauiGpsRequestInForeground;
 
 
 
