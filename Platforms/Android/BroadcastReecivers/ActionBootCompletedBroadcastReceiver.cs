@@ -2,14 +2,11 @@
 using Android.App;
 using Android.Content;
 using Android.OS;
-using GTS.CMMS.RegistroHorario.UI.Maui.Configuracion;
-using GTS.CMMS.RegistroHorario.UI.Maui.Helpers;
-using GTS.CMMS.RegistroHorario.UI.Maui.Interfaces;
 
 [assembly: UsesPermission(Manifest.Permission.ReceiveBootCompleted)]
 //Tiene que pertenecer al namespace raíz para poder tener acceso a Android.Content y otros
 //recursos.
-namespace GTS.CMMS.RegistroHorario.UI.Maui;
+namespace MauiGpsRequestInForeground.Maui;
 
 
 //NOTA: en elagunos dispositivos es necesario en ajustes, en inicio automático, permitir a la
