@@ -5,7 +5,7 @@ using Plugin.LocalNotification;
 
 
 //namespace GTS.CMMS.RegistroHorario.UI.Maui.Platforms.Android.Workers;
-namespace GTS.CMMS.RegistroHorario.UI.Maui;
+namespace MauiGpsRequestInForeground.Maui;
 
 
 
