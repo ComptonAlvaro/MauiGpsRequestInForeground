@@ -5,7 +5,7 @@
 using Android.Locations;
 using Android.OS;
 using CommunityToolkit.Mvvm.Messaging;
-using GTS.CMMS.RegistroHorario.UI.Maui.Localizacion;
+using MauiGpsRequestInForeground.Localizacion;
 //Con esto se define el namespace de Location, ya que se encuentra en Android.Locations
 //y en Microsoft... Se quiere el de Android en este caso para utilizar los recursos nativos
 //de Android.
@@ -13,7 +13,7 @@ using Location = Android.Locations.Location;
 
 
 
-namespace GTS.CMMS.RegistroHorario.UI.Maui.Platforms.Android.Services;
+namespace MauiGpsRequestInForeground.Platforms.Android.Services;
 
 
 
